@@ -58,7 +58,8 @@
         {"@type":"ListItem","position":9,"item":{"@type":"SoftwareApplication","name":"GitHub Copilot","applicationCategory":"Coding AI","offers":{"@type":"Offer","price":"10","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","ratingCount":"3200","bestRating":"5"}}},
         {"@type":"ListItem","position":10,"item":{"@type":"SoftwareApplication","name":"Codeium","applicationCategory":"Coding AI","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","ratingCount":"480","bestRating":"5"}}},
         {"@type":"ListItem","position":11,"item":{"@type":"SoftwareApplication","name":"Surfer SEO","applicationCategory":"SEO & Marketing AI","offers":{"@type":"Offer","price":"69","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","ratingCount":"590","bestRating":"5"}}},
-        {"@type":"ListItem","position":12,"item":{"@type":"SoftwareApplication","name":"Writesonic","applicationCategory":"SEO & Marketing AI","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","ratingCount":"410","bestRating":"5"}}}
+        {"@type":"ListItem","position":12,"item":{"@type":"SoftwareApplication","name":"Writesonic","applicationCategory":"SEO & Marketing AI","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","ratingCount":"410","bestRating":"5"}}},
+        {"@type":"ListItem","position":13,"item":{"@type":"SoftwareApplication","name":"Remio","applicationCategory":"Productivity AI","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","ratingCount":"120","bestRating":"5"}}}
       ]
     },
     {
@@ -736,7 +737,8 @@
     { id:"image", label:"Image AI", color:"#EC4899", icon:'<rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="9" r="2" stroke="currentColor" stroke-width="2"/><path d="M3 16l5-5 4 4 3-3 6 6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' },
     { id:"video", label:"Video AI", color:"#3B82F6", icon:'<rect x="3" y="5" width="14" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M17 9l4-2v10l-4-2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' },
     { id:"coding", label:"Coding AI", color:"#14B8A6", icon:'<path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' },
-    { id:"seo", label:"SEO & Marketing AI", color:"#F59E0B", icon:'<path d="M4 19V9M10 19V5M16 19v-7M21 19H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' }
+    { id:"seo", label:"SEO & Marketing AI", color:"#F59E0B", icon:'<path d="M4 19V9M10 19V5M16 19v-7M21 19H3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' },
+    { id:"productivity", label:"Productivity AI", color:"#14B8A6", icon:'<path d="M5 12h14M12 5v14M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' }
   ];
   var catMap = {};
   categories.forEach(function(c){ catMap[c.id] = c; });
@@ -754,7 +756,8 @@
     { id:"copilot", name:"GitHub Copilot", category:"coding", price:"paid", rating:4.7, desc:"An AI pair programmer that suggests code completions and entire functions directly inside your editor.", url:"https://github.com/features/copilot" },
     { id:"codeium", name:"Codeium", category:"coding", price:"free", rating:4.5, desc:"A free AI coding assistant offering autocomplete, chat, and search across dozens of programming languages.", url:"https://codeium.com" },
     { id:"surferseo", name:"Surfer SEO", category:"seo", price:"paid", rating:4.6, desc:"An AI-powered SEO tool that analyzes top-ranking pages and guides you to write content that ranks higher.", url:"https://surferseo.com" },
-    { id:"writesonic", name:"Writesonic", category:"seo", price:"freemium", rating:4.4, desc:"An AI writing tool focused on SEO content, ad copy, and product descriptions for marketing teams.", url:"https://writesonic.com" }
+    { id:"writesonic", name:"Writesonic", category:"seo", price:"freemium", rating:4.4, desc:"An AI writing tool focused on SEO content, ad copy, and product descriptions for marketing teams.", url:"https://writesonic.com" },
+    { id:"remio", name:"Remio", category:"productivity", price:"freemium", rating:4.6, desc:"A local-first AI memory and personal knowledge base that parses files, webpages, recordings, emails, messages, images, and notes into local indexes for focused context retrieval.", url:"https://remio.ai/" }
   ];
 
   /* ============== STATE ============== */
